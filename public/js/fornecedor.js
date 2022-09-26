@@ -10,11 +10,8 @@ $('#frmfornecedor').validate({
     //adiconamos regras de validação ao formulário
     rules: {
         //bloqueamos uma quantidade minima de caracteres
-        //para o campo nome e sobre nome.
+        //para o campo nome
         nome: {
-            minlength: 3
-        },
-        sobrenome: {
             minlength: 3
         },
     },
@@ -124,8 +121,8 @@ salvar.addEventListener('click', function () {
     }
 });
 
-$("#cpf").inputmask({
-    mask: '999.999.999-99'
+$("#cnpj").inputmask({
+    mask: '99.999.999/9999-99'
 });
 
 //const cpf = document.querySelector("#cpf");

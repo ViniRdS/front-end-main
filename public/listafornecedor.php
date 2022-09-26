@@ -6,8 +6,9 @@ foreach ($fornecedor as $key => $value) {
     $dados = $dados . "<tr>" .
         "<td>" . $value['id'] . "</td>" .
         "<td>" . $value['nome'] . "</td>" .
-        "<td>" . $value['sobre_nome'] . "</td>" .
-        "<td>" . $value['cpf'] . "</td>" .
+        "<td>" . $value['cnpj'] . "</td>" .
+        "<td>" . $value['telefone'] . "</td>" .
+        "<td>" . $value['endereco'] . "</td>" .
         "<td>" .
         "<td>" .
         "<div class='btn-group' role='group'>" .

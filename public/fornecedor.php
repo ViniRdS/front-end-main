@@ -50,18 +50,25 @@ if ($id) {
                                         <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome!" required autofocus value="<? echo isset($fornecedor['nome']) ? $fornecedor['nome'] : ''; ?>">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="sobrenome" class="form-label">
-                                            Sobrenome
+                                        <label for="cnpj" class="form-label">
+                                            CNPJ
                                             <span class="text-danger"> * </span>
                                         </label>
-                                        <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Digite seu sobre nome!" required value="<? echo isset($fornecedor['sobre_nome']) ? $fornecedor['sobre_nome'] : ''; ?>">
+                                        <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="Digite seu CNPJ!" required value="<? echo isset($fornecedor['cnpj']) ? $fornecedor['cnpj'] : ''; ?>">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="cpf" class="form-label">
-                                            CPF
+                                        <label for="cnpj" class="form-label">
+                                            Telefone
                                             <span class="text-danger"> * </span>
                                         </label>
-                                        <input type="text" class="form-control" id="CPF" name="CPF" placeholder="Digite seu CPF!" required value="<? echo isset($fornecedor['cpf']) ? $fornecedor['cpf'] : ''; ?>">
+                                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone!" required value="<? echo isset($fornecedor['telefone']) ? $fornecedor['telefone'] : ''; ?>">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="endereco" class="form-label">
+                                            Endereço
+                                            <span class="text-danger"> * </span>
+                                        </label>
+                                        <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite seu endereço!" required value="<? echo isset($fornecedor['endereco']) ? $fornecedor['endereco'] : ''; ?>">
                                     </div>
                                 </form>
                             </div>

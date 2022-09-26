@@ -91,6 +91,14 @@
                                     <label for="cpf" class="form-label">Cpf</label>
                                     <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu CPF!">
                                 </div>
+                                <div class="form-group">
+                                    <label for="telefone" class="form-label">Telefone</label>
+                                    <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone!">
+                                </div>
+                                <div class="form-group">
+                                    <label for="endereco" class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite seu endereço!">
+                                </div>
                             </div>
                         </div>
 
@@ -109,7 +117,6 @@
     </div>
     <div class="container">
         <form id="usuarios" name="usuarios">
-            <input type="text" name="id" id="id">
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -139,6 +146,8 @@
                                         <td>Nome</td>
                                         <td>Sobre nome</td>
                                         <td>Cpf</td>
+                                        <td>Telefone</td>
+                                        <td>Endereço</td>
                                         <td>Ação</td>
                                     </tr>
                                 </thead>

@@ -8,6 +8,8 @@ foreach ($usuario as $key => $value) {
         "<td>" . $value['nome'] . "</td>" .
         "<td>" . $value['sobre_nome'] . "</td>" .
         "<td>" . $value['cpf'] . "</td>" .
+        "<td>" . $value['telefone'] . "</td>" .
+        "<td>" . $value['endereco'] . "</td>" .
         "<td>" .
         "<td>" .
         "<div class='btn-group' role='group'>" .

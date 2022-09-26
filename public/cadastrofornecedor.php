@@ -2,10 +2,11 @@
 include "Conection.php";
 try {
     $nome      = $_POST["nome"];
-    $sobrenome = $_POST["sobrenome"];
-    $cpf       = $_POST["cpf"];
-    $sql = "INSERT INTO fornecedor(nome, sobre_nome, cpf) " .
-        " VALUES ('{$nome}','{$sobrenome}','{$cpf}');";
+    $cnpj       = $_POST["cnpj"];
+    $telefone       = $_POST["telefone"];
+    $endereco       = $_POST["endereco"];
+    $sql = "INSERT INTO fornecedor(nome, cnpj,telefone,endereco) " .
+        " VALUES ('{$nome}','{$cnpj}','{$telefone}','{$endereco}');";
     $pdo->prepare($sql)->execute();
     echo "true";
 } catch (PDOException $e) {

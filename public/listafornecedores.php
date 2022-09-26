@@ -83,13 +83,16 @@
                                     <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome!" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="sobrenome" class="form-label">Sobre nome <span class="text-danger"> *
-                                        </span> </label>
-                                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Digite seu sobre nome!" required>
+                                    <label for="cnpj" class="form-label">Cnpj</label>
+                                    <input type="text" class="form-control" id="cnpj" name="cnpj" placeholder="Digite seu CNPJ!">
                                 </div>
                                 <div class="form-group">
-                                    <label for="cpf" class="form-label">Cpf</label>
-                                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu CPF!">
+                                    <label for="telefone" class="form-label">Telefone</label>
+                                    <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone!">
+                                </div>
+                                <div class="form-group">
+                                    <label for="endereco" class="form-label">Endereco</label>
+                                    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite seu endereco!">
                                 </div>
                             </div>
                         </div>
@@ -109,7 +112,6 @@
     </div>
     <div class="container">
         <form id="fornecedores" name="fornecedores">
-            <input type="text" name="id" id="id">
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -137,8 +139,9 @@
                                     <tr>
                                         <td>Código</td>
                                         <td>Nome</td>
-                                        <td>Sobre nome</td>
-                                        <td>Cpf</td>
+                                        <td>Cnpj</td>
+                                        <td>Telefone</td>
+                                        <td>Endereço</td>
                                         <td>Ação</td>
                                     </tr>
                                 </thead>

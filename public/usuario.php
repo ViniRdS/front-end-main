@@ -63,6 +63,20 @@ if ($id) {
                                         </label>
                                         <input type="text" class="form-control" id="CPF" name="CPF" placeholder="Digite seu CPF!" required value="<? echo isset($usuario['cpf']) ? $usuario['cpf'] : ''; ?>">
                                     </div>
+                                    <div class="mb-3">
+                                        <label for="telefone" class="form-label">
+                                            Telefone
+                                            <span class="text-danger"> * </span>
+                                        </label>
+                                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone!" required autofocus value="<? echo isset($usuario['telefone']) ? $usuario['telefone'] : ''; ?>">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="nome" class="form-label">
+                                            Endereço
+                                            <span class="text-danger"> * </span>
+                                        </label>
+                                        <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite seu endereço!" required autofocus value="<? echo isset($usuario['endereco']) ? $usuario['endereco'] : ''; ?>">
+                                    </div>
                                 </form>
                             </div>
                         </div>
