@@ -1,0 +1,2 @@
+Opa professor, o arquivo projeto.sql são as tabelas que eu criei no banco aula2.
+É só o senhor dar um drop nas tabelas que já existem e criar de novo no banco aula2 e tudo certo
