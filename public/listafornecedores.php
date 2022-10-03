@@ -48,6 +48,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <form method="post" name="frmfornecedor" id="frmfornecedor">
+                    <input type="text" id="id" name="id">
+                    <input type="text" id="acao" name="acao">
                     <div class="modal-header">
                         <h5 class="modal-title" id="staticBackdropLabel">Dados do fornecedor</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -112,11 +114,12 @@
     </div>
     <div class="container">
         <form id="fornecedores" name="fornecedores">
+            <input type="text" name="idfornecedor" id="idfornecedor">
             <div class="row">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cadastrofornecedor">
+                        <button id="btncadastro" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#cadastrofornecedor">
                                 <i class="fa-solid fa-plus"> </i> Cadastrar
                             </button>
                             <button id="btnatualiza" type="button" class="btn btn-primary">

@@ -3,7 +3,7 @@ include "Conection.php";
 $usuario = $pdo->query('select * from usuario;')->fetchAll();
 $dados = "";
 foreach ($usuario as $key => $value) {
-    $dados = $dados . "<tr>" .
+    $dados = $dados . "<tr id='tr" . $value['id'] . "'>" .
         "<td>" . $value['id'] . "</td>" .
         "<td>" . $value['nome'] . "</td>" .
         "<td>" . $value['sobre_nome'] . "</td>" .
@@ -13,9 +13,9 @@ foreach ($usuario as $key => $value) {
         "<td>" .
         "<td>" .
         "<div class='btn-group' role='group'>" .
-        "<a href='usuario.php?id=" . $value['id'] . "' type='button' class='btn btn-warning'>" .
+        "<button type='button' onclick='alterar(" . json_encode($value) . ")' type='button' class='btn btn-warning'>" .
         "<i class='fa-solid fa-pen-to-square'> </i> Editar" .
-        "</a>" .
+        "</button>" .
         "<button onclick='deleta(" . $value['id'] . ");' type='button' class='btn btn-danger'>" .
         "<i class='fa-solid fa-trash'> </i> Excluir" .
         "</button>" .
